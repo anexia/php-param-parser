@@ -1,0 +1,9 @@
+# IDE project files
+/.idea
+/.vscode
+
+# PHP vendor
+/vendor
+
+/coverage.txt
+/coverage.xml

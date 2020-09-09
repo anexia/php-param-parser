@@ -1,0 +1,27 @@
+{
+    "name": "anexia/param-parser",
+    "description": "Parses param placeholders within an arbitrary string",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "minimum-stability": "stable",
+    "homepage": "https://github.com/anexia-it/php-param-parser",
+    "authors": [
+        {
+            "name": "Andreas Stocker",
+            "email": "AStocker@anexia-it.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Anexia\\ParamParser\\": "src" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Anexia\\ParamParser\\Test\\": "tests" }
+    },
+    "require": {
+        "php" : ">=7.1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : ">=7.5.0"
+    }
+}
