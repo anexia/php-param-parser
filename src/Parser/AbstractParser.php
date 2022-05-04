@@ -1,12 +1,9 @@
 <?php
 
-
 namespace Anexia\ParamParser\Parser;
-
 
 use Anexia\ParamParser\Lexer\AbstractLexer;
 use Anexia\ParamParser\Token\Token;
-
 
 /**
  * Class AbstractParser
@@ -18,7 +15,6 @@ use Anexia\ParamParser\Token\Token;
  */
 abstract class AbstractParser
 {
-
     /**
      * Member variable that holds the lexer that produces the tokens for the parser.
      *
@@ -95,5 +91,4 @@ abstract class AbstractParser
             )
         );
     }
-
 }

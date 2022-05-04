@@ -1,11 +1,8 @@
 <?php
 
-
 namespace Anexia\ParamParser\Node;
 
-
 use Anexia\ParamParser\Parser\ParamSequenceParser;
-
 
 /**
  * Class AbstractNode
@@ -17,5 +14,4 @@ use Anexia\ParamParser\Parser\ParamSequenceParser;
  */
 abstract class AbstractNode
 {
-
 }

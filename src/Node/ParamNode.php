@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Anexia\ParamParser\Node;
-
 
 /**
  * Class ParamNode
@@ -14,7 +12,6 @@ namespace Anexia\ParamParser\Node;
  */
 class ParamNode extends AbstractNode
 {
-
     /**
      * Member variable that holds the name of the param.
      *
@@ -58,12 +55,14 @@ class ParamNode extends AbstractNode
      */
     public function __toString()
     {
+        // @codeCoverageIgnoreStart
         return sprintf(
             'ParamNode(%s, %s, %s)',
             var_export($this->paramName, true),
             var_export($this->paramType, true),
             var_export($this->paramOptions, true)
         );
+        // @codeCoverageIgnoreEnd
     }
 
     /**

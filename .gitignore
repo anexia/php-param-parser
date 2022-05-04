@@ -2,8 +2,15 @@
 /.idea
 /.vscode
 
+# PHP composer
+/composer.lock
+/composer.phar
+
 # PHP vendor
 /vendor
+
+# PHPunit
+/.phpunit.result.cache
 
 /coverage.txt
 /coverage.xml

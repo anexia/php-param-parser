@@ -1,15 +1,12 @@
 <?php
 
-
 namespace Anexia\ParamParser\Parser;
-
 
 use Anexia\ParamParser\Lexer\ParamLexer;
 use Anexia\ParamParser\Lexer\ParamSequenceLexer;
 use Anexia\ParamParser\Node\ParamNode;
 use Anexia\ParamParser\Node\SequenceNode;
 use Anexia\ParamParser\Token\Token;
-
 
 /**
  * Class ParamSequenceParser
@@ -21,7 +18,6 @@ use Anexia\ParamParser\Token\Token;
  */
 class ParamSequenceParser extends AbstractParser
 {
-
     /**
      * ParamSequenceParser constructor.
      *
@@ -74,5 +70,4 @@ class ParamSequenceParser extends AbstractParser
 
         return $nodeList;
     }
-
 }

@@ -1,10 +1,11 @@
-php-param-parser
-================
+param-parser
+============
 
-[![Build Status](https://travis-ci.org/anexia-it/php-param-parser.svg?branch=master)](https://travis-ci.org/anexia-it/php-param-parser)
-[![codecov](https://codecov.io/gh/anexia-it/php-param-parser/branch/master/graph/badge.svg)](https://codecov.io/gh/anexia-it/php-param-parser)
+[![PHP version](https://badge.fury.io/ph/anexia%2Fparam-parser.svg)](https://badge.fury.io/ph/anexia%2Fparam-parser)
+[![Test Status](https://github.com/anexia/php-param-parser/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/anexia/php-param-parser/actions/workflows/test.yml)
+[![Codecov](https://codecov.io/gh/anexia/php-param-parser/branch/main/graph/badge.svg)](https://codecov.io/gh/anexia/php-param-parser)
 
-php-param-parser is a parser library for a param string expression. Those expressions are arbitrary strings with 
+`param-parser` is a parser library for a param string expression. Those expressions are arbitrary strings with 
 placeholders in it, where a placeholder consists of a name, an optional type and a list of options.
 
 # Install
@@ -60,6 +61,17 @@ $result = parse('this-is-a-\{param:string:option1,option2,option3\}-expression')
 $result[0]; // Gets a Anexia\ParamParser\Node\SequenceNode instance
 $result[0]->getSequenceValue(); // Gets "this-is-a-{param:string:option1,option2,option3}-expression" as a string
 ```
+
+# Supported versions
+
+|         | Supported |
+|---------|-----------|
+| PHP 7.1 | ✓         |
+| PHP 7.2 | ✓         |
+| PHP 7.3 | ✓         |
+| PHP 7.4 | ✓         |
+| PHP 8.0 | ✓         |
+| PHP 8.1 | ✓         |
 
 # List of developers
 
