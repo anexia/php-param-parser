@@ -1,11 +1,8 @@
 <?php
 
-
 namespace Anexia\ParamParser\Parser;
 
-
 use Exception;
-
 
 /**
  * Class ParserSyntaxException
@@ -16,5 +13,4 @@ use Exception;
  */
 class ParserSyntaxException extends Exception
 {
-
 }

@@ -1,11 +1,8 @@
 <?php
 
-
 namespace Anexia\ParamParser\Lexer;
 
-
 use Anexia\ParamParser\Token\Token;
-
 
 /**
  * Class AbstractLexer
@@ -17,7 +14,6 @@ use Anexia\ParamParser\Token\Token;
  */
 abstract class AbstractLexer
 {
-
     /**
      * Member variable that holds the expression the lexer should produce tokens
      * from.
@@ -127,5 +123,4 @@ abstract class AbstractLexer
 
         return new Token($position, $tokenType, $sequence, $rawSequence);
     }
-
 }

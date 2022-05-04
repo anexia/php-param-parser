@@ -1,13 +1,10 @@
 <?php
 
-
 namespace Anexia\ParamParser\Parser;
-
 
 use Anexia\ParamParser\Lexer\ParamLexer;
 use Anexia\ParamParser\Lexer\ParamOptionsLexer;
 use Anexia\ParamParser\Token\Token;
-
 
 /**
  * Class ParamParser
@@ -19,7 +16,6 @@ use Anexia\ParamParser\Token\Token;
  */
 class ParamParser extends AbstractParser
 {
-
     /**
      * ParamParser constructor.
      *

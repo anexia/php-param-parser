@@ -1,0 +1,44 @@
+name: Run linter and tests
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version:
+          - "7.1"
+          - "7.2"
+          - "7.3"
+          - "7.4"
+          - "8.0"
+          - "8.1"
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up PHP ${{ matrix.php-version }}
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php-version }}
+        extensions: mbstring
+
+    - name: Install dependencies
+      run: |
+          composer install --no-progress
+
+    - name: Check syntax
+      run: |
+          find *.php src/ -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l
+
+    - name: Check formatting
+      run: |
+          ./vendor/bin/phpcs --standard=PSR12 src/
+
+    - name: Run tests
+      run: |
+          ./vendor/bin/phpunit --configuration ./phpunit.xml
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v2

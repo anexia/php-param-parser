@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Anexia\ParamParser\Token;
-
 
 /**
  * Class Token
@@ -72,6 +70,7 @@ class Token
      */
     public function __toString()
     {
+        // @codeCoverageIgnoreStart
         return sprintf(
             'Token(%s, %s, %s, %s)',
             var_export($this->tokenPosition, true),
@@ -79,6 +78,7 @@ class Token
             var_export($this->tokenValue, true),
             var_export($this->tokenRawValue, true)
         );
+        // @codeCoverageIgnoreEnd
     }
 
     /**

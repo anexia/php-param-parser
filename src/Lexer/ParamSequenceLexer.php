@@ -1,11 +1,8 @@
 <?php
 
-
 namespace Anexia\ParamParser\Lexer;
 
-
 use Anexia\ParamParser\Token\Token;
-
 
 /**
  * Class ParamSequenceLexer
@@ -17,7 +14,6 @@ use Anexia\ParamParser\Token\Token;
  */
 class ParamSequenceLexer extends AbstractLexer
 {
-
     /**
      * Produces the next token for the input expression.
      *

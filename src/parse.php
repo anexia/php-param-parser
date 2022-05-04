@@ -1,14 +1,11 @@
 <?php
 
-
 namespace Anexia\ParamParser;
-
 
 use Anexia\ParamParser\Lexer\ParamSequenceLexer;
 use Anexia\ParamParser\Node\ParamNode;
 use Anexia\ParamParser\Node\SequenceNode;
 use Anexia\ParamParser\Parser\ParamSequenceParser;
-
 
 /**
  * Parses the given expression and returns an array of {@link SequenceNode} and {@link ParamNode} instances. The

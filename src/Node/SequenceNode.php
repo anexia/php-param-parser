@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Anexia\ParamParser\Node;
-
 
 /**
  * Class SequenceNode
@@ -13,7 +11,6 @@ namespace Anexia\ParamParser\Node;
  */
 class SequenceNode extends AbstractNode
 {
-
     /**
      * Member variable that holds the value of the sequence.
      *
@@ -38,10 +35,12 @@ class SequenceNode extends AbstractNode
      */
     public function __toString()
     {
+        // @codeCoverageIgnoreStart
         return sprintf(
             'SequenceNode(%s)',
             var_export($this->sequenceValue, true)
         );
+        // @codeCoverageIgnoreEnd
     }
 
     /**
