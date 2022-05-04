@@ -3,7 +3,7 @@
     "description": "Parses param placeholders within an arbitrary string",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "minimum-stability": "stable",
     "homepage": "https://github.com/anexia/php-param-parser",
     "authors": [
