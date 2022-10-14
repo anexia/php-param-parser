@@ -1,8 +1,8 @@
 param-parser
 ============
 
-[![PHP version](https://badge.fury.io/ph/anexia%2Fparam-parser.svg)](https://badge.fury.io/ph/anexia%2Fparam-parser)
-[![Test Status](https://github.com/anexia/php-param-parser/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/anexia/php-param-parser/actions/workflows/test.yml)
+[![PHP version](https://img.shields.io/packagist/v/anexia/param-parser.svg)](https://packagist.org/packages/anexia/param-parser)
+[![Test status](https://github.com/anexia/php-param-parser/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/anexia/php-param-parser/actions/workflows/test.yml)
 [![Codecov](https://codecov.io/gh/anexia/php-param-parser/branch/main/graph/badge.svg)](https://codecov.io/gh/anexia/php-param-parser)
 
 `param-parser` is a parser library for a param string expression. Those expressions are arbitrary strings with 
